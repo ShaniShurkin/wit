@@ -18,6 +18,7 @@ class FileHandler:
     def find_working_dir():
         return os.getcwd()
 
+
     @staticmethod
     def walk_up(path, top):
         while True:
