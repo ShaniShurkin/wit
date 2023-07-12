@@ -8,14 +8,6 @@ class Logger:
     _logger = logging.getLogger(__name__)
 
     # @classmethod
-    # def __init__(cls):
-    #     print("-------------------------")
-    #     cls._level = logging.INFO
-    #     cls._format = "%(asctime)s LEVEL: %(levelname)s MSG: %(message)s"
-    #     logging.basicConfig(format=cls._format, level=cls._level)
-    #     cls._logger = logging.getLogger("main")
-
-    # @classmethod
     # @property
     # def logger(cls):
     #     return cls._logger
