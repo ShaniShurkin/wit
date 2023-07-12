@@ -3,22 +3,26 @@ import shutil
 
 
 class FileHandler:
-    working_directory = None
+    _working_directory = None
     _base_path = None
+
+    @classmethod
+    @property
+    def base_path(cls):
+        if not cls._base_path:
+            cls._base_path = cls.find_wit_dir()
+        return cls._base_path
+
+    @classmethod
+    @property
+    def working_directory(cls):
+        if not cls._working_directory:
+            cls._working_directory = os.getcwd()
+        return cls._working_directory
+
     @staticmethod
     def create_dir(path):
         os.mkdir(path)
-
-    @property
-    def base_path(self):
-        if not self.base_path:
-            self._base_path = self.find_wit_dir()
-        return self._base_path
-
-    @staticmethod
-    def find_working_dir():
-        return os.getcwd()
-
 
     @staticmethod
     def walk_up(path, top):
@@ -31,30 +35,28 @@ class FileHandler:
 
     @classmethod
     def find_wit_dir(cls):
-        path = cls.find_working_dir()
-        for p in cls.walk_up(os.path.dirname(path), "C:\\"):
+        for p in cls.walk_up(os.path.dirname(cls.working_directory), "C:\\"):
             p = os.path.join(p, ".wit")
-            if os.path.isdir(p):
+            if cls.create_and_validate_path(p, ".wit"):
                 return p
+
         # TODO raise exception init wit before
 
-    def walk_up(path, top):
-        while True:
-            yield path
-            if path == top:
-                raise StopIteration
-            else:
-                path = os.path.dirname(path)
-
-
-
-
     @classmethod
-    def validate_path(cls, path):
-        full_path = os.path.join(cls.working_directory, path)
-        if not os.path.exists(full_path):
-            pass
-            # TODO: handle file doesn't exist
+    def create_and_validate_path(cls, routing_end, routing_start=None):
+        print("1")
+        if not routing_start:
+            print(2)
+            routing_start = cls.working_directory
+            print(cls.working_directory)
+        print(f"routing_start: {routing_start}, type: {type(routing_start)}/n routing_end: {routing_end}, type: {type(routing_end)}")
+        full_path = os.path.join(routing_start, routing_end)
+        return full_path
+        # print(full_path)
+        # if not os.path.exists(full_path):
+        #     pass
+        # TODO: handle file doesn't exist
+
 
     @classmethod
     def copy_item(cls, origin, target):
