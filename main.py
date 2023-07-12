@@ -7,3 +7,5 @@ if __name__ == '__main__':
     WitInterface.handle_commands(command, args)
 
 
+# TODO: change command to be wit instead of python main.py
+# TODO: create flags if client wants to see logging (-d, -i)
