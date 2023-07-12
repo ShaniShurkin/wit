@@ -32,8 +32,3 @@ class Wit:
     def commit():
         pass
 
-
-wit = Wit()
-wit.init()
-wit.add("wit.py")
-print(FileHandler.working_directory)

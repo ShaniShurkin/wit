@@ -24,21 +24,14 @@ class FileHandler:
     def create_dir(path):
         os.mkdir(path)
 
-    @staticmethod
-    def walk_up(path, top):
-        while True:
-            yield path
-            if path == top:
-                raise StopIteration
-            else:
-                path = os.path.dirname(path)
-
     @classmethod
     def find_wit_dir(cls):
-        for p in cls.walk_up(os.path.dirname(cls.working_directory), "C:\\"):
-            p = os.path.join(p, ".wit")
-            if cls.create_and_validate_path(p, ".wit"):
-                return p
+        for root, dirs, files in os.walk(cls.working_directory, topdown=False):
+            for name in dirs:
+                print(name)
+                if name == ".wit":
+                    cls._base_path = os.path.join(root, name)
+        return cls._base_path
 
         # TODO raise exception init wit before
 
