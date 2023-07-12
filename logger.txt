@@ -2,3 +2,5 @@
 2023-07-12 17:33:16,835 LEVEL: INFO MSG: A new folder images was created in the path: ./.wit/images
 2023-07-12 17:33:16,835 LEVEL: INFO MSG: A new folder staging_area was created in the path: ./.wit/staging_area
 2023-07-12 17:34:20,082 LEVEL: INFO MSG: An item has been copied from C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\main.py to C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\.wit\staging_area
+2023-07-12 19:00:55,768 LEVEL: ERROR MSG: No such path exists: c:\m
+2023-07-12 19:16:56,468 LEVEL: ERROR MSG: An error occurred while creating the folder: 'classmethod' object is not callable

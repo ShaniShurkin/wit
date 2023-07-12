@@ -1,5 +1,6 @@
 import os
 import shutil
+from exception_handler import exception_handler
 from logger import Logger
 import logging
 
@@ -7,10 +8,6 @@ import logging
 class FileHandler:
     _working_directory = None
     _base_path = None
-    # logging_format = "%(asctime)s LEVEL: %(levelname)s MSG: %(message)s"
-    # logging.basicConfig(format=logging_format, level=logging.DEBUG)
-    # _logger = logging.getLogger(__name__)
-    _logger = Logger
 
     @classmethod
     @property
@@ -29,7 +26,7 @@ class FileHandler:
     def create_dir(cls, path):
         os.mkdir(path)
         message = f"A new folder {os.path.basename(os.path.normpath(path))} was created in the path: {path}"
-        cls._logger.log_to(level=logging.INFO, message=message)
+        Logger.log_to(level=logging.INFO, message=message)
 
     @classmethod
     def find_base_dir(cls):
@@ -38,30 +35,34 @@ class FileHandler:
                 if name == ".wit":
                     return os.path.join(root, name)
         else:
-            cls._logger.log_to(level=logging.ERROR, message="There is no .wit directory in project")
+            Logger.log_to(level=logging.ERROR, message="There is no .wit directory in project")
             return None
             # TODO raise excption init wit before
 
+    @exception_handler
     @classmethod
     def get_full_path(cls, routing_end, routing_start=None):
         if not routing_start:
             routing_start = cls.working_directory
         full_path = os.path.join(routing_start, routing_end)
         if not os.path.exists(full_path):
-            cls._logger.log_to(level=logging.ERROR, message="There is item in this name by")################
-            raise FileExistsError
+            message = f"No such path exists: {full_path}"
+            raise FileExistsError(message)
         return full_path
-        # print(full_path)
-
-        # TODO: handle file doesn't exist
 
     @classmethod
     def copy_item(cls, origin, target):
         if os.path.isfile(origin):
-
             shutil.copy(origin, target)
         else:
             target = os.path.join(target, os.path.basename(os.path.normpath(origin)))
 
             shutil.copytree(origin, target)
-        cls._logger.log_to(level=logging.INFO, message=f"An item has been copied from {origin} to {target}")
+        Logger.log_to(level=logging.INFO, message=f"An item has been copied from {origin} to {target}")
+        # except FileExistsError as fee:
+        #     Logger.log_to(level=logging.ERROR, message=fee)
+        # except Exception as e:
+        #     Logger.log_to(level=logging.ERROR, message=e)
+
+
+FileHandler.get_full_path("g\\", "y\\j")
