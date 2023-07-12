@@ -4,11 +4,10 @@ from wit import Wit
 class WitInterface:
     @staticmethod
     def handle_commands(command, args):
-
-        match args:
+        match command:
             case "init":
                 Wit.init()
             case "add":
-                Wit.add("temp1")
+                Wit.add(args)
             case "commit":
                 Wit.commit()

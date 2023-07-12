@@ -35,18 +35,19 @@ class FileHandler:
 
     @classmethod
     def find_wit_dir(cls):
-        for p in cls.walk_up(os.path.dirname(cls.working_directory), "C:\\"):
+        print(f"{cls.working_directory[0]}:\\")
+        for p in cls.walk_up(os.path.dirname(cls.working_directory), r"D:\\"):
             p = os.path.join(p, ".wit")
-            if cls.create_and_validate_path(p, ".wit"):
+            print("1", p)
+            if os.path.isdir(p):
+                print("2", p)
                 return p
-
+        return None
         # TODO raise exception init wit before
 
     @classmethod
     def create_and_validate_path(cls, routing_end, routing_start=None):
-        print("1")
         if not routing_start:
-            print(2)
             routing_start = cls.working_directory
             print(cls.working_directory)
         print(f"routing_start: {routing_start}, type: {type(routing_start)}/n routing_end: {routing_end}, type: {type(routing_end)}")

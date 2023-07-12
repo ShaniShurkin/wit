@@ -4,7 +4,8 @@ import sys
 
 
 if __name__ == '__main__':
-    main_arg = sys.argv[1]
-    WitInterface.handle_commands(0, main_arg)
+    command = sys.argv[1]
+    args = sys.argv[2:]
+    WitInterface.handle_commands(command, args)
 
 

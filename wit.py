@@ -11,6 +11,7 @@ class Wit:
     @staticmethod
     def init():
         if Wit.validate_is_wit_repo():
+            print(Wit.validate_is_wit_repo())
             # TODO: message this repository had already init
             pass
         else:
@@ -31,5 +32,3 @@ class Wit:
     @staticmethod
     def commit():
         pass
-
-
