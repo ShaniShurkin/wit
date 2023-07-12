@@ -14,9 +14,9 @@ class Wit:
             # TODO: message this repository had already init
             pass
         else:
-            FileHandler.create_dir("./.wit")
-            FileHandler.create_dir("./.wit/images")
-            FileHandler.create_dir("./.wit/staging_area")
+            FileHandler.create_dir(r".\.wit")
+            FileHandler.create_dir(r".\.wit\images")
+            FileHandler.create_dir(r".\.wit\staging_area")
 
     @staticmethod
     def move_to_staging(source_path):
@@ -33,7 +33,3 @@ class Wit:
         pass
 
 
-wit = Wit()
-wit.init()
-wit.add("wit.py")
-print(FileHandler.working_directory)

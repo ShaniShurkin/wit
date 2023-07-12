@@ -22,7 +22,7 @@ class FileHandler:
 
     @staticmethod
     def create_dir(path):
-        os.mkdir(path)
+        os.makedirs(path)
 
     @staticmethod
     def walk_up(path, top):
