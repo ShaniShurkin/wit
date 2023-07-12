@@ -4,3 +4,10 @@
 2023-07-12 17:34:20,082 LEVEL: INFO MSG: An item has been copied from C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\main.py to C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\.wit\staging_area
 2023-07-12 19:00:55,768 LEVEL: ERROR MSG: No such path exists: c:\m
 2023-07-12 19:16:56,468 LEVEL: ERROR MSG: An error occurred while creating the folder: 'classmethod' object is not callable
+2023-07-12 19:22:12,774 LEVEL: ERROR MSG: 'classmethod' object is not callable
+2023-07-12 19:37:22,939 LEVEL: ERROR MSG: No such path exists: y\j\g\
+2023-07-12 19:38:30,009 LEVEL: ERROR MSG: expected str, bytes or os.PathLike object, not float
+2023-07-12 19:42:03,551 LEVEL: ERROR MSG: expected str, bytes or os.PathLike object, not NoneType
+2023-07-12 19:42:03,551 LEVEL: ERROR MSG: [WinError 183] Cannot create a file when that file already exists: './.wit'
+2023-07-12 19:42:03,552 LEVEL: ERROR MSG: [WinError 183] Cannot create a file when that file already exists: './.wit/images'
+2023-07-12 19:42:03,552 LEVEL: ERROR MSG: [WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
