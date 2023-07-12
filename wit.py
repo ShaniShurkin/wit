@@ -20,15 +20,14 @@ class Wit:
 
     @staticmethod
     def move_to_staging(source_path):
-        target_path = FileHandler.create_and_validate_path(FileHandler.base_path, "staging_area")
+        target_path = FileHandler.get_full_path("staging_area", FileHandler.base_path)
         FileHandler.copy_item(source_path, target_path)
 
     @staticmethod
-    def add(*args):
-        full_path = FileHandler.create_and_validate_path(routing_end=args[0])
+    def add(args):
+        full_path = FileHandler.get_full_path(args[0])
         Wit.move_to_staging(full_path)
 
     @staticmethod
     def commit():
         pass
-

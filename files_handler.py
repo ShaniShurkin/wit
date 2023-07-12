@@ -9,8 +9,7 @@ class FileHandler:
     @classmethod
     @property
     def base_path(cls):
-        if not cls._base_path:
-            cls._base_path = cls.find_wit_dir()
+        cls._base_path = cls.find_base_dir()
         return cls._base_path
 
     @classmethod
@@ -25,24 +24,18 @@ class FileHandler:
         os.mkdir(path)
 
     @classmethod
-    def find_wit_dir(cls):
+    def find_base_dir(cls):
         for root, dirs, files in os.walk(cls.working_directory, topdown=False):
             for name in dirs:
-                print(name)
                 if name == ".wit":
-                    cls._base_path = os.path.join(root, name)
-        return cls._base_path
-
+                    return os.path.join(root, name)
+        return None
         # TODO raise exception init wit before
 
     @classmethod
-    def create_and_validate_path(cls, routing_end, routing_start=None):
-        print("1")
+    def get_full_path(cls, routing_end, routing_start=None):
         if not routing_start:
-            print(2)
             routing_start = cls.working_directory
-            print(cls.working_directory)
-        print(f"routing_start: {routing_start}, type: {type(routing_start)}/n routing_end: {routing_end}, type: {type(routing_end)}")
         full_path = os.path.join(routing_start, routing_end)
         return full_path
         # print(full_path)
@@ -54,6 +47,8 @@ class FileHandler:
     @classmethod
     def copy_item(cls, origin, target):
         if os.path.isfile(origin):
+            
             shutil.copy(origin, target)
         else:
+            target = os.path.join(target, os.path.basename(os.path.normpath(origin)))
             shutil.copytree(origin, target)
