@@ -1,7 +1,8 @@
+import logging
 import os
 
 from files_handler import FileHandler
-
+from logger import Logger
 
 class Wit:
     @staticmethod
@@ -10,13 +11,15 @@ class Wit:
 
     @staticmethod
     def init():
-        if Wit.validate_is_wit_repo():
-            # TODO: message this repository had already init
-            pass
+        print(Wit.validate_is_wit_repo())
+        if not Wit.validate_is_wit_repo() is None:
+            raise FileExistsError("this repository had already init")
         else:
             FileHandler.create_dir("./.wit")
             FileHandler.create_dir("./.wit/images")
             FileHandler.create_dir("./.wit/staging_area")
+            message = f"init successful"
+            Logger.log_to(level=logging.INFO, message=message)
 
     @staticmethod
     def move_to_staging(source_path):
@@ -27,6 +30,8 @@ class Wit:
     def add(args):
         full_path = FileHandler.get_full_path(args[0])
         Wit.move_to_staging(full_path)
+        message = f"add successful"
+        Logger.log_to(level=logging.INFO, message=message)
 
     @staticmethod
     def commit():
