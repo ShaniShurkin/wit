@@ -345,3 +345,27 @@ An item has been copied from C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\trial
 add successful
 An item has been copied from C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\main.py to C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\.wit\staging_area
 add successful
+An item has been copied from C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\wit.py to C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\.wit\staging_area
+add successful
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+init successful
+An item has been copied from C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\wit.py to C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\.wit\staging_area
+add successful
+An item has been copied from C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\wit.py to C:\Users\User\Desktop\מדעי המחשב\bootcamp\.wit\staging_area
+add successful
+An item has been copied from C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\main.py to C:\Users\User\Desktop\מדעי המחשב\bootcamp\.wit\staging_area
+add successful
+There is no .wit dir in project
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+stat: path should be string, bytes, os.PathLike or integer, not NoneType
+add successful
+There is no .wit dir in project
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+stat: path should be string, bytes, os.PathLike or integer, not NoneType
+add successful
+There is no .wit dir in project
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+stat: path should be string, bytes, os.PathLike or integer, not NoneType
+add successful

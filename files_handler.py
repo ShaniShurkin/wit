@@ -29,13 +29,17 @@ class FileHandler:
     @exception_handler
     def __find_base_dir(cls):
         item_path = cls.working_directory
-        while True:
+        parent_path = ""
+        drive = os.path.splitdrive(item_path)[0]
+
+        while not parent_path == f"{drive}\\":
             doubt_wit_dir_path = os.path.join(item_path, ".wit")
             if os.path.exists(doubt_wit_dir_path):
                 return doubt_wit_dir_path
             parent_path = os.path.dirname(item_path)
-            if parent_path == "C:\\":
-                return None
+            item_path = parent_path
+        raise WitException("There is no .wit dir in project")
+
 
     @classmethod
     @exception_handler

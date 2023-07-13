@@ -11,6 +11,7 @@ from wit_exception import WitException
 class Wit:
     _wit_dir = None
     _info_logger = partial(Logger.log_to, level=logging.INFO)
+
     @classmethod
     def validate_is_wit_repo(cls):
         return cls._wit_dir is not None
