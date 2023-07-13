@@ -10,22 +10,32 @@ from wit_exception import WitException
 
 class FileHandler:
     _working_directory = None
-    _base_path = None
+    _base_path = "C:\\"
 
     @classmethod
     @property
-    @exception_handler
     def base_path(cls):
-        cls._base_path = cls.find_base_dir()
+        cls._base_path = cls.__find_base_dir()
         return cls._base_path
 
     @classmethod
     @property
-    @exception_handler
+    # @exception_handler
     def working_directory(cls):
-        if not cls._working_directory:
-            cls._working_directory = os.getcwd()
+        cls._working_directory = os.getcwd()
         return cls._working_directory
+
+    @classmethod
+    @exception_handler
+    def __find_base_dir(cls):
+        item_path = cls.working_directory
+        while True:
+            doubt_wit_dir_path = os.path.join(item_path, ".wit")
+            if os.path.exists(doubt_wit_dir_path):
+                return doubt_wit_dir_path
+            parent_path = os.path.dirname(item_path)
+            if parent_path == "C:\\":
+                return None
 
     @classmethod
     @exception_handler
@@ -36,22 +46,11 @@ class FileHandler:
 
     @classmethod
     @exception_handler
-    def find_base_dir(cls):
-        for root, dirs, files in os.walk(cls.working_directory, topdown=False):
-            for name in dirs:
-                if name == ".wit":
-                    return os.path.join(root, name)
-        raise WitException("There is no .wit directory in project")
-
-    @classmethod
-    @exception_handler
     def get_full_path(cls, routing_end, routing_start=None):
         if not routing_start:
-            print(1)
             routing_start = cls.working_directory
         full_path = os.path.join(routing_start, routing_end)
         if not os.path.exists(full_path):
-            print(2)
             message = f"No such path exists: {full_path}"
             raise FileExistsError(message)
         return full_path

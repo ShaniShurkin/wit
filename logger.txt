@@ -11,3 +11,427 @@
 2023-07-12 19:42:03,551 LEVEL: ERROR MSG: [WinError 183] Cannot create a file when that file already exists: './.wit'
 2023-07-12 19:42:03,552 LEVEL: ERROR MSG: [WinError 183] Cannot create a file when that file already exists: './.wit/images'
 2023-07-12 19:42:03,552 LEVEL: ERROR MSG: [WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+2023-07-12 20:12:26,960 LEVEL: ERROR MSG: expected str, bytes or os.PathLike object, not NoneType
+2023-07-12 20:12:26,961 LEVEL: INFO MSG: A new folder .wit was created in the path: ./.wit
+2023-07-12 20:12:26,961 LEVEL: INFO MSG: A new folder images was created in the path: ./.wit/images
+2023-07-12 20:12:26,961 LEVEL: INFO MSG: A new folder staging_area was created in the path: ./.wit/staging_area
+2023-07-12 20:12:45,046 LEVEL: ERROR MSG: expected str, bytes or os.PathLike object, not NoneType
+2023-07-12 20:12:45,046 LEVEL: ERROR MSG: expected str, bytes or os.PathLike object, not NoneType
+2023-07-12 20:12:45,046 LEVEL: ERROR MSG: expected str, bytes or os.PathLike object, not NoneType
+2023-07-12 20:12:45,046 LEVEL: ERROR MSG: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+2023-07-12 20:12:55,505 LEVEL: ERROR MSG: expected str, bytes or os.PathLike object, not NoneType
+2023-07-12 20:12:55,505 LEVEL: ERROR MSG: expected str, bytes or os.PathLike object, not NoneType
+2023-07-12 20:12:55,505 LEVEL: ERROR MSG: expected str, bytes or os.PathLike object, not NoneType
+2023-07-12 20:12:55,505 LEVEL: ERROR MSG: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+There is no .wit directory in project
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 46, in __find_base_dir
+    raise WitException("There is no .wit directory in project")
+wit_exception.WitException: There is no .wit directory in project
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 55, in get_full_path
+    raise FileExistsError(message)
+FileExistsError: No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+stat: path should be string, bytes, os.PathLike or integer, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 61, in copy_item
+    if os.path.isfile(origin):
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 30, in isfile
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 57, in get_full_path
+    raise FileExistsError(message)
+FileExistsError: No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+stat: path should be string, bytes, os.PathLike or integer, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 63, in copy_item
+    if os.path.isfile(origin):
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 30, in isfile
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 58, in get_full_path
+    raise FileExistsError(message)
+FileExistsError: No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+stat: path should be string, bytes, os.PathLike or integer, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 64, in copy_item
+    if os.path.isfile(origin):
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 30, in isfile
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+[WinError 183] Cannot create a file when that file already exists: './.wit'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 34, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit'
+[WinError 183] Cannot create a file when that file already exists: './.wit/images'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 34, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit/images'
+[WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 34, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 58, in get_full_path
+    raise FileExistsError(message)
+FileExistsError: No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+stat: path should be string, bytes, os.PathLike or integer, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 64, in copy_item
+    if os.path.isfile(origin):
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 30, in isfile
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 58, in get_full_path
+    raise FileExistsError(message)
+FileExistsError: No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+stat: path should be string, bytes, os.PathLike or integer, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 64, in copy_item
+    if os.path.isfile(origin):
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 30, in isfile
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 57, in get_full_path
+    raise FileExistsError(message)
+FileExistsError: No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+stat: path should be string, bytes, os.PathLike or integer, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 63, in copy_item
+    if os.path.isfile(origin):
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 30, in isfile
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 55, in get_full_path
+    raise FileExistsError(message)
+FileExistsError: No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+stat: path should be string, bytes, os.PathLike or integer, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 61, in copy_item
+    if os.path.isfile(origin):
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 30, in isfile
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+[WinError 183] Cannot create a file when that file already exists: './.wit'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 46, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit'
+[WinError 183] Cannot create a file when that file already exists: './.wit/images'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 46, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit/images'
+[WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 46, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+[WinError 183] Cannot create a file when that file already exists: './.wit'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 58, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit'
+[WinError 183] Cannot create a file when that file already exists: './.wit/images'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 58, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit/images'
+[WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 58, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+[WinError 183] Cannot create a file when that file already exists: './.wit'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 58, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit'
+[WinError 183] Cannot create a file when that file already exists: './.wit/images'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 58, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit/images'
+[WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 58, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+[WinError 183] Cannot create a file when that file already exists: './.wit'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 59, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit'
+[WinError 183] Cannot create a file when that file already exists: './.wit/images'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 59, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit/images'
+[WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func(*args, **kwargs)
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 59, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func_res = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 59, in get_full_path
+    raise FileExistsError(message)
+FileExistsError: No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func_res = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 68, in copy_item
+    target = os.path.join(target, os.path.basename(os.path.normpath(origin)))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen ntpath>", line 108, in join
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func_res = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 56, in get_full_path
+    raise FileExistsError(message)
+FileExistsError: No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func_res = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 65, in copy_item
+    target = os.path.join(target, os.path.basename(os.path.normpath(origin)))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen ntpath>", line 108, in join
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func_res = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 56, in get_full_path
+    raise FileExistsError(message)
+FileExistsError: No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func_res = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 65, in copy_item
+    target = os.path.join(target, os.path.basename(os.path.normpath(origin)))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen ntpath>", line 108, in join
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func_res = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 56, in get_full_path
+    raise FileExistsError(message)
+FileExistsError: No such path exists: C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\staging_area
+expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func_res = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 65, in copy_item
+    target = os.path.join(target, os.path.basename(os.path.normpath(origin)))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen ntpath>", line 108, in join
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+[WinError 183] Cannot create a file when that file already exists: './.wit'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func_res = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 43, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit'
+[WinError 183] Cannot create a file when that file already exists: './.wit/images'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func_res = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 43, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit/images'
+[WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\exception_handler.py", line 12, in inner_function
+    func_res = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\files_handler.py", line 43, in create_dir
+    os.mkdir(path)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: './.wit/staging_area'
+An item has been copied from C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\trial to C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\.wit\staging_area\trial
+An item has been copied from C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\main.py to C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\.wit\staging_area
