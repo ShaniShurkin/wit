@@ -336,3 +336,12 @@ A new folder images was created in the path: ./.wit/images
 A new folder staging_area was created in the path: ./.wit/staging_area
 No such path exists: C:\Users\User\Desktop\ן¿½ן¿½ן¿½ן¿½ ן¿½ן¿½ן¿½ן¿½ן¿½\bootcamp\wit\staging_area
 this repository had already init
+this repository had already init
+A new folder .wit was created in the path: ./.wit
+A new folder images was created in the path: ./.wit/images
+A new folder staging_area was created in the path: ./.wit/staging_area
+init successful
+An item has been copied from C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\trial to C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\.wit\staging_area\trial
+add successful
+An item has been copied from C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\main.py to C:\Users\User\Desktop\מדעי המחשב\bootcamp\wit\.wit\staging_area
+add successful

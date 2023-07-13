@@ -18,7 +18,7 @@ class Wit:
     @classmethod
     @exception_handler
     def init(cls):
-        if not cls.validate_is_wit_repo() is None:
+        if cls.validate_is_wit_repo():
             raise WitException("this repository had already init")
         else:
             FileHandler.create_dir("./.wit")
