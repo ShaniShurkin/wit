@@ -4,13 +4,13 @@
 wit is a lightweight Git implementation written in Python. It aims to provide the core functionality of Git, allowing users to version control their projects, manage branches, and track changes efficiently.
 
 ## Features
-- Initialize a new Git repository
+- Initialize a new Wit repository
 - Stage and commit changes
 - Create and switch between branches
 - Merge branches
 - View commit history
 - Track changes and file modifications
-- Ignore specific files or directories using .gitignore
+- Ignore specific files or directories using .witignore
 - Revert to previous commits
 - Push and pull changes to remote repositories
 
@@ -18,7 +18,7 @@ wit is a lightweight Git implementation written in Python. It aims to provide th
 1. Clone the wit repository from GitHub:
    
 
-   git clone https://github.com/your-username/wit.git
+   git clone https://github.com/ShaniShurkin/wit.git
    
 
 2. Navigate to the wit directory:
@@ -40,17 +40,20 @@ wit is a lightweight Git implementation written in Python. It aims to provide th
    
 
 ## Usage
-- Initialize a new Git repository in the current directory:
+- Initialize a new Wit repository in the current directory:
   
 
   wit init
   
 
-- Add files to the staging area:
-  
+- Add files\directories to the staging area:
 
   wit add file1.txt file2.py
-  
+  wit add folder1
+
+  Inserting an internal file\directory includes the current path:
+  wit add folder1\file1.txt
+  wit add folder1\folder2
 
 - Commit changes with a descriptive message:
   
@@ -100,4 +103,5 @@ wit is a lightweight Git implementation written in Python. It aims to provide th
 Contributions to wit are welcome! If you encounter any bugs, have suggestions, or would like to add new features, please create a new issue on the GitHub repository.
 
 ## License
+
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
